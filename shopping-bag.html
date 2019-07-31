@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shopping-bag</title>
+    <link rel="stylesheet" href="./css/shopping-bag.css">
+</head>
+<body>
+<div class="wrapper js-bag-open">
+    <header class="header">
+        <strong class="logo">
+            <a href="home.html" class="logo__control">SH</a>
+        </strong>
+        <nav class="nav">
+            <ul>
+                <li><a href="category-all.html">Woman</a></li>
+                <li><a href="category-all.html">Men</a></li>
+                <li><a href="category-all.html">Kids</a></li>
+                <li><a href="category-all.html">Coming Soon</a></li>
+            </ul>
+        </nav>
+        <form class="search js-header-search">
+            <label class="search__label js-header-search__label">
+                <input type="text" placeholder="Search something..." class="search__input js-header-search__input">
+            </label>
+            <button class="search__control js-header-search__control icon-search"></button>
+        </form>
+        <a class="bag" href="shopping-bag.html">
+            <i class="icon-shopping-bag"></i>
+            Basket
+            (<span class="js-bag-amount">0</span>)
+        </a>
+    </header>
+    <main class="main">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol class="breadcrumb__list r-list">
+                <li class="breadcrumb__group">
+                    <a href="#" class="breadcrumb__point ">HOME</a>
+                    <span class="breadcrumb__divider" aria-hidden="true">/</span>
+                </li>
+                <li class="breadcrumb__group">
+                    <a href="#" class="breadcrumb__point ">MEN</a>
+                    <span class="breadcrumb__divider" aria-hidden="true">/</span>
+                </li>
+                <li class="breadcrumb__group">
+                    <a href="#" class="breadcrumb__point ">SHOES</a>
+                    <span class="breadcrumb__divider" aria-hidden="true">/</span>
+                </li>
+                <li class="breadcrumb__group">
+                    <a href="#" class="breadcrumb__point ">FLORAL PLIMSOLL</a>
+
+                </li>
+            </ol>
+        </nav>
+        <section class="shopping-bag js-shopping-bag">
+            <header class="bag-header">
+                <h1 class="bag-header__title">Your shopping bag</h1>
+                <span class="bag-header__legend">Items reserved for limited time only</span>
+            </header>
+            <div class="bag-table js-bag-table" aria-label="Table">
+                <div class="bag-table-head">
+                    <div class="bag-table-row">
+                        <div class="bag-table-cell bag-table-cell--image">Product</div>
+                        <div class="bag-table-cell bag-table-cell--description">Description</div>
+                        <div class="bag-table-cell bag-table-cell--color">Color</div>
+                        <div class="bag-table-cell bag-table-cell--size">Size</div>
+                        <div class="bag-table-cell bag-table-cell--qty">Qty</div>
+                        <div class="bag-table-cell bag-table-cell--amount">Amount</div>
+                        <div class="bag-table-cell bag-table-cell--delete">Delete</div>
+                    </div>
+                </div>
+                <div class="bag-table-body">
+                    <div class="bag-table-row js-bag-table-row">
+                        <div class="bag-table-cell bag-table-cell--image">
+                            <img src="https://via.placeholder.com/100x100" alt="Product image">
+                        </div>
+                        <div class="bag-table-cell-all-in-one">
+                            <div class="bag-table-cell bag-table-cell--description bag-product">
+                                <div class="bag-product__name">Floral Plimsoll (1st)</div>
+                                <div class="bag-product__legend">Ref. 2514/302</div>
+                            </div>
+                            <div class="bag-table-cell bag-table-cell--color">Black</div>
+                            <div class="bag-table-cell bag-table-cell--size">39</div>
+                            <div class="bag-table-cell bag-table-cell--qty">
+                                <label><input class="js-qty" type="number" min="1" value="1"></label>
+                            </div>
+                        </div>
+
+                        <div class="bag-table-cell bag-table-cell--amount">&euro; 99.95</div>
+                        <div class="bag-table-cell bag-table-cell--delete">
+                            <button class="js-delete-button">X</button>
+                        </div>
+                    </div>
+                    <div class="bag-table-row js-bag-table-row">
+                        <div class="bag-table-cell bag-table-cell--image">
+                            <img src="https://via.placeholder.com/100x100" alt="Product image">
+                        </div>
+                        <div class="bag-table-cell-all-in-one">
+                            <div class="bag-table-cell bag-table-cell--description bag-product">
+                                <div class="bag-product__name">Floral Plimsoll (1st)</div>
+                                <div class="bag-product__legend">Ref. 2514/302</div>
+                            </div>
+                            <div class="bag-table-cell bag-table-cell--color">Black</div>
+                            <div class="bag-table-cell bag-table-cell--size">39</div>
+                            <div class="bag-table-cell bag-table-cell--qty">
+                                <label><input class="js-qty" type="number" min="1" value="1"></label>
+                            </div>
+                        </div>
+
+                        <div class="bag-table-cell bag-table-cell--amount">&euro; 99.95</div>
+                        <div class="bag-table-cell bag-table-cell--delete">
+                            <button class="js-delete-button">X</button>
+                        </div>
+                    </div>
+                    <div class="bag-table-row js-bag-table-row">
+                        <div class="bag-table-cell bag-table-cell--image">
+                            <img src="https://via.placeholder.com/100x100" alt="Product image">
+                        </div>
+                        <div class="bag-table-cell-all-in-one">
+                            <div class="bag-table-cell bag-table-cell--description bag-product">
+                                <div class="bag-product__name">Floral Plimsoll (1st)</div>
+                                <div class="bag-product__legend">Ref. 2514/302</div>
+                            </div>
+                            <div class="bag-table-cell bag-table-cell--color">Black</div>
+                            <div class="bag-table-cell bag-table-cell--size">39</div>
+                            <div class="bag-table-cell bag-table-cell--qty">
+                                <label><input class="js-qty" type="number" min="1" value="1"></label>
+                            </div>
+                        </div>
+
+                        <div class="bag-table-cell bag-table-cell--amount">&euro; 99.95</div>
+                        <div class="bag-table-cell bag-table-cell--delete">
+                            <button class="js-delete-button">X</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bag-table-footer">
+                    <div class="bag-table-row">
+                        <div class="bag-table-cell bag-table-cell--prev-subtotal-empty"></div>
+                        <div class="bag-table-cell bag-table-cell--subtotal-label">Subtotal</div>
+                        <div class="bag-table-cell bag-table-cell--subtotal-amount">1000$</div>
+                        <div class="bag-table-cell bag-table-cell--next-subtotal-amount-empty"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bag-empty-message">
+                Your bag is empty...
+            </div>
+            <div class="bag-buttons">
+                <a href="home.html" class="button-continue">Continue Shopping</a>
+                <button class="button-order js-order-now">Order now</button>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer footer--bordered">
+        <div class="slider js-slider">
+            <ul class="slider__frame js-slider__frame">
+                <li class="slide">
+                    <div class="top-product">
+                        <a href="category-all.html" class="top-product__link"></a>
+                        <img src="./img/product-7.jpg" alt="Slider image"
+                             class="top-product__image">
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="top-product">
+                        <a href="product-details.html" class="top-product__link"></a>
+                        <img src="./img/product-6.jpg" alt="Slider image"
+                             class="top-product__image">
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="top-product">
+                        <a href="category-all.html" class="top-product__link"></a>
+                        <img src="./img/product-5.jpg" alt="Slider image"
+                             class="top-product__image">
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="top-product">
+                        <a href="product-details.html" class="top-product__link"></a>
+                        <img src="./img/product-4.jpg" alt="Slider image"
+                             class="top-product__image">
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="top-product">
+                        <a href="category-all.html" class="top-product__link"></a>
+                        <img src="./img/product-3.jpg" alt="Slider image"
+                             class="top-product__image">
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="top-product">
+                        <a href="product-details.html" class="top-product__link"></a>
+                        <img src="./img/product-2.jpg" alt="Slider image"
+                             class="top-product__image">
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="top-product">
+                        <a href="category-all.html" class="top-product__link"></a>
+                        <img src="./img/product-5.jpg" alt="Slider image"
+                             class="top-product__image">
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="top-product">
+                        <a href="product-details.html" class="top-product__link"></a>
+                        <img src="./img/product-1.jpg" alt="Slider image"
+                             class="top-product__image">
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="top-product">
+                        <a href="category-all.html" class="top-product__link"></a>
+                        <img src="./img/product-5.jpg" alt="Slider image"
+                             class="top-product__image">
+                    </div>
+                </li>
+            </ul>
+            <div class="js-slider-controls">
+                <button class="slider-control slider-control--left icon-triangle-left js-slider__left-button">
+                </button>
+                <button class="slider-control slider-control--right icon-triangle-right js-slider__right-button">
+                </button>
+            </div>
+
+
+        </div>
+        <div class="footer-content">
+            <section class="sub-nav">
+                <h3 class="sub-nav__header">Collection</h3>
+                <ul>
+                    <li class="sub-nav__text"><a href="#">Woman</a></li>
+                    <li class="sub-nav__text"><a href="#">Men</a></li>
+                    <li class="sub-nav__text"><a href="#">Kids</a></li>
+                    <li class="sub-nav__text"><a href="#">Coming soon</a></li>
+                </ul>
+            </section>
+            <section class="sub-nav">
+                <h3 class="sub-nav__header">Site</h3>
+                <ul>
+                    <li class="sub-nav__text"><a href="#">Terms of Service</a></li>
+                    <li class="sub-nav__text"><a href="#">Privacy Policy</a></li>
+                    <li class="sub-nav__text"><a href="#">Copyright Policy</a></li>
+                    <li class="sub-nav__text"><a href="#">Press kit</a></li>
+                    <li class="sub-nav__text"><a href="#">Support</a></li>
+                </ul>
+            </section>
+            <section class="sub-nav">
+                <h3 class="sub-nav__header">Shop</h3>
+                <ul>
+                    <li class="sub-nav__text"><a href="#">About us</a></li>
+                    <li class="sub-nav__text"><a href="#">Shipping methods</a></li>
+                    <li class="sub-nav__text"><a href="#">Career</a></li>
+                    <li class="sub-nav__text"><a href="#">Contact</a></li>
+                </ul>
+            </section>
+            <section class="sub-nav">
+                <h3 class="sub-nav__header">Social</h3>
+                <p class="sub-nav__text">Shoper is made with love in Warsaw.</p>
+                <p class="sub-nav__text">2014 &copy; All rights reserved. El Passion</p>
+                <ul class="social">
+                    <li><a href="#" class="social__control icon-twitter"></a></li>
+                    <li><a href="#" class="social__control icon-facebook"></a></li>
+                    <li><a href="#" class="social__control icon-instagram"></a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+</div>
+
+<script src="js/compiled/search.js"></script>
+<script src="js/compiled/bag.js"></script>
+
+</body>
+</html>

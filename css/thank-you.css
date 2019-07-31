@@ -1,0 +1,35 @@
+@import "_base.css";
+
+.thank-message {
+    padding: 185px;
+    text-align: center;
+}
+
+.thank-message__header {
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.thank-message__legend {
+    font-family: 'Neuton', serif;
+    font-size: 27px;
+    font-style: italic;
+    letter-spacing: 3px;
+    color: #e5e5e5;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .thank-message {
+        padding: 30px 0 40px 0;
+        border-bottom: 1px solid #e5e5e5;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .thank-message__header {
+        line-height: 85px;
+    }
+}

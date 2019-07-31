@@ -1,0 +1,22 @@
+{
+  "name": "e-comm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-js": "rimraf ./js/compiled && babel ./js --out-dir ./js/compiled"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "rimraf": "^2.6.3"
+  },
+  "browserslist": {
+    "targets": [
+      "IE 11"
+    ]
+  }
+}

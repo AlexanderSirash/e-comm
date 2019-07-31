@@ -1,0 +1,48 @@
+.product-size {
+    padding-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.product-size__title {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.select-size input {
+    display: none;
+}
+
+.select-size__label {
+    line-height: 38px;
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+    color: #606060;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #606060;
+}
+
+.select-size__label:last-child {
+    margin-right: 0;
+}
+
+.select-size__label:hover {
+    background-color: #e5e5e5;
+}
+
+.select-size input:checked + label {
+    color: #fff;
+    background: #999;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .select-size__label {
+        line-height: 31px;
+        width: 31px;
+        height: 31px;
+    }
+}

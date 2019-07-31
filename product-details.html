@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>product-details</title>
+    <link rel="stylesheet" href="./css/product-details.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <strong class="logo">
+            <a href="home.html" class="logo__control">SH</a>
+        </strong>
+        <nav class="nav">
+            <ul>
+                <li><a href="category-all.html">Woman</a></li>
+                <li><a href="category-all.html">Men</a></li>
+                <li><a href="category-all.html">Kids</a></li>
+                <li><a href="category-all.html">Coming Soon</a></li>
+            </ul>
+        </nav>
+        <form class="search js-header-search">
+            <label class="search__label js-header-search__label">
+                <input type="text" placeholder="Search something..." class="search__input js-header-search__input">
+            </label>
+            <button class="search__control js-header-search__control icon-search"></button>
+        </form>
+        <a class="bag" href="shopping-bag.html">
+            <i class="icon-shopping-bag"></i>
+            Basket
+            (<span class="js-bag-amount">0</span>)
+        </a>
+    </header>
+
+    <main class="main">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol class="breadcrumb__list r-list">
+                <li class="breadcrumb__group">
+                    <a href="#" class="breadcrumb__point">HOME</a>
+                    <span class="breadcrumb__divider" aria-hidden="true">/</span>
+                </li>
+                <li class="breadcrumb__group">
+                    <a href="#" class="breadcrumb__point">MEN</a>
+                    <span class="breadcrumb__divider" aria-hidden="true">/</span>
+                </li>
+                <li class="breadcrumb__group">
+                    <a href="#" class="breadcrumb__point">SHOES</a>
+                    <span class="breadcrumb__divider" aria-hidden="true">/</span>
+                </li>
+                <li class="breadcrumb__group">
+                    <a href="#" class="breadcrumb__point">FLORAL PLIMSOLL</a>
+                </li>
+            </ol>
+        </nav>
+
+        <div class="main-content ">
+            <div class="image-switcher">
+                <div class="image-switcher__frame js-image-switcher__frame">
+                    <img src="./img/product-1.jpg" alt="product image">
+                </div>
+                <ol class="image-switcher__menu js-image-switcher__menu">
+                    <li class="product-image-wrap">
+                        <a href="#">
+                            <img class="product-image" src="./img/product-2.jpg" alt="product image">
+                        </a>
+                    </li>
+                    <li class="product-image-wrap">
+                        <a href="#">
+                            <img class="product-image" src="./img/product-3.jpg" alt="product image">
+                        </a>
+                    </li>
+                    <li class="product-image-wrap">
+                        <a href="#">
+                            <img class="product-image" src="./img/product-4.jpg" alt="product image">
+                        </a>
+                    </li>
+                </ol>
+            </div>
+            <div class="product-details">
+                <h1 class="product-details__name">Floral Plimsoll</h1>
+                <span class="product-details__article">Article number: 1421010160762</span>
+                <span class="product-details-price"><span class="product-details-price__sign">€</span> 99.95</span>
+                <p class="product-details__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc lobortis, sapien ut luctus tempor, ante metus hendrerit dui, vitae dapibus urna mi</p>
+                <div class="product-size">
+                    <div class="product-size__title">size</div>
+                    <div class="select-size">
+                        <input type="radio" name="s-size" id="38" checked/>
+                        <label class="select-size__label" for="38">38</label>
+                        <input type="radio" name="s-size" id="39"/>
+                        <label class="select-size__label" for="39">39</label>
+                        <input type="radio" name="s-size" id="40"/>
+                        <label class="select-size__label" for="40">40</label>
+                        <input type="radio" name="s-size" id="41"/>
+                        <label class="select-size__label" for="41">41</label>
+                        <input type="radio" name="s-size" id="42"/>
+                        <label class="select-size__label" for="42">42</label>
+                    </div>
+                </div>
+
+                <button class="product-details__button js-product-details__button">ADD TO CART</button>
+                <div class="js-product-added product-details-notification">Product added</div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer footer--bordered">
+        <div class="slider js-slider">
+            <ul class="slider__frame js-slider__frame">
+                <li class="slide">
+                    <div class="top-product">
+                        <a href="category-all.html" class="top-product__link"></a>
+                        <img src="./img/product-7.jpg" alt="Slider image"
+                             class="top-product__image">
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="top-product">
+                        <a href="product-details.html" class="top-product__link"></a>
+                        <img src="./img/product-6.jpg" alt="Slider image"
+                             class="top-product__image">
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="top-product">
+                        <a href="category-all.html" class="top-product__link"></a>
+                        <img src="./img/product-5.jpg" alt="Slider image"
+                             class="top-product__image">
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="top-product">
+                        <a href="product-details.html" class="top-product__link"></a>
+                        <img src="./img/product-4.jpg" alt="Slider image"
+                             class="top-product__image">
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="top-product">
+                        <a href="category-all.html" class="top-product__link"></a>
+                        <img src="./img/product-3.jpg" alt="Slider image"
+                             class="top-product__image">
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="top-product">
+                        <a href="product-details.html" class="top-product__link"></a>
+                        <img src="./img/product-2.jpg" alt="Slider image"
+                             class="top-product__image">
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="top-product">
+                        <a href="category-all.html" class="top-product__link"></a>
+                        <img src="./img/product-5.jpg" alt="Slider image"
+                             class="top-product__image">
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="top-product">
+                        <a href="product-details.html" class="top-product__link"></a>
+                        <img src="./img/product-1.jpg" alt="Slider image"
+                             class="top-product__image">
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="top-product">
+                        <a href="category-all.html" class="top-product__link"></a>
+                        <img src="./img/product-5.jpg" alt="Slider image"
+                             class="top-product__image">
+                    </div>
+                </li>
+            </ul>
+            <div class="js-slider-controls">
+                <button class="slider-control slider-control--left icon-triangle-left js-slider__left-button">
+                </button>
+                <button class="slider-control slider-control--right icon-triangle-right js-slider__right-button">
+                </button>
+            </div>
+
+
+        </div>
+        <div class="footer-content">
+            <section class="sub-nav">
+                <h3 class="sub-nav__header">Collection</h3>
+                <ul>
+                    <li class="sub-nav__text"><a href="#">Woman</a></li>
+                    <li class="sub-nav__text"><a href="#">Men</a></li>
+                    <li class="sub-nav__text"><a href="#">Kids</a></li>
+                    <li class="sub-nav__text"><a href="#">Coming soon</a></li>
+                </ul>
+            </section>
+            <section class="sub-nav">
+                <h3 class="sub-nav__header">Site</h3>
+                <ul>
+                    <li class="sub-nav__text"><a href="#">Terms of Service</a></li>
+                    <li class="sub-nav__text"><a href="#">Privacy Policy</a></li>
+                    <li class="sub-nav__text"><a href="#">Copyright Policy</a></li>
+                    <li class="sub-nav__text"><a href="#">Press kit</a></li>
+                    <li class="sub-nav__text"><a href="#">Support</a></li>
+                </ul>
+            </section>
+            <section class="sub-nav">
+                <h3 class="sub-nav__header">Shop</h3>
+                <ul>
+                    <li class="sub-nav__text"><a href="#">About us</a></li>
+                    <li class="sub-nav__text"><a href="#">Shipping methods</a></li>
+                    <li class="sub-nav__text"><a href="#">Career</a></li>
+                    <li class="sub-nav__text"><a href="#">Contact</a></li>
+                </ul>
+            </section>
+            <section class="sub-nav">
+                <h3 class="sub-nav__header">Social</h3>
+                <p class="sub-nav__text">Shoper is made with love in Warsaw.</p>
+                <p class="sub-nav__text">2014 &copy; All rights reserved. El Passion</p>
+                <ul class="social">
+                    <li><a href="#" class="social__control icon-twitter"></a></li>
+                    <li><a href="#" class="social__control icon-facebook"></a></li>
+                    <li><a href="#" class="social__control icon-instagram"></a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+</div>
+
+<script src="js/compiled/search.js"></script>
+<script src="js/compiled/slider.js"></script>
+<script src="js/compiled/add-to-card.js"></script>
+<script src="js/compiled/image-switcher.js"></script>
+</body>
+</html>

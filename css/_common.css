@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Neuton:400,400i&display=swap');
+@import "_reset.css";
+@import "_icons.css";
+
+html {
+    height: 100%;
+}
+
+body {
+    font: 14px/1.7 'Lato', sans-serif;
+    min-height: 100%;
+    color: #303030;
+    background-color: #e5e5e5;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+main {
+    display: block;
+    padding: 0 30px;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    min-width: 414px;
+    max-width: 1240px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.js-bag-open .main-content,
+.js-bag-open .slider {
+    display: none;
+}
+
+.shopping-bag {
+    display: none;
+}
+
+.js-bag-open .shopping-bag {
+    display: block;
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        padding: 0 15px;
+    }
+}
